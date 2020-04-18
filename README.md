@@ -53,8 +53,7 @@ mutation DeleteUser{
 ```
 
 # config graphql Api Platform
-
-### composer req webonyx/graphql-php
+composer req webonyx/graphql-php
 
 ### config/packages/api_platform.yaml
 api_platform:
@@ -84,9 +83,10 @@ api_platform:
             enabled: true
 
 ### config/routes/api_platform.yaml
+```
 graphiql:
     path: /docs/graphiql
     methods: GET
     controller: api_platform.graphql.action.graphiql
-    
+```
     
